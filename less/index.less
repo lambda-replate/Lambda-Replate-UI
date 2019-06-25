@@ -48,29 +48,33 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 // ABOUT US PAGE -- TABS
 
 .tabs {
+  border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 47px;
   background-color: white;
   @media(min-width: 1280px){
     width: 1280px;
-  
+  }
+
   .roles {
     display: flex;
-    justify-content: center;    
+    justify-content: none;
+    align-items: center;
     .title {
       font-size: 12px;
       letter-spacing: 1px;
       font-weight: bold;
-    
+    }
+
     .tab {
       display: flex;
       justify-content: none;
-      align-items: none;
-      flex-direction: row;      
+      align-items: center;
       color: white;
-      background-color: lightgray;
+      background-color: gray;
       margin: 0 5px;
       padding: 2px 10px;
       font-size: 12px;
@@ -79,15 +83,16 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
       font-weight: bold;
       &:hover {
         text-decoration: underline;
-      
+      }
+    }
     
     .active-tab {
       background-color: white;
-      color: gray;
-      border: 2px solid gray;
-    
+      color: red;
+      border: 2px soli black;
+    }
   
-    }}}}}}
+    }}
 
 
     // ABOUT US PAGE --- CARDS
@@ -136,7 +141,8 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
             font-weight: bold;
           
         
-          }}}}}}}}}
+          }}}}}}}}
+    
 
 .fillerBox{
     height: 500px;
