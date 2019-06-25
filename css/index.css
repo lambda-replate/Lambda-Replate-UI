@@ -1,0 +1,38 @@
+html {
+  background: #F4F4F4;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+nav {
+  text-align: center;
+  padding-top: 20px;
+}
+nav a {
+  padding: 0 1rem;
+  display: inline;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  font-size: xx-large;
+}
+nav.scroll {
+  background-color: green;
+  color: #eef;
+}
+header.scroll {
+  background: white;
+  -webkit-box-shadow: 0px 10px 39px 0px rgba(165, 171, 189, 0.37);
+  -moz-box-shadow: 0px 10px 39px 0px rgba(165, 171, 189, 0.37);
+  box-shadow: 0px 10px 39px 0px rgba(165, 171, 189, 0.37);
+}
+.fillerBox {
+  height: 500px;
+  background: yellow;
+}
