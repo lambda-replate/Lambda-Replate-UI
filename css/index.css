@@ -86,8 +86,17 @@ h2 {
   width: 70%;
 }
 .services {
+  padding: 15px;
   margin: 0 auto;
   background-color: #1b1b1b;
   color: white;
   text-align: center;
+}
+.box1 {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: lightgrey;
+  padding: 20px;
+  margin: 25px;
 }
