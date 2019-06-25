@@ -1,3 +1,7 @@
+
+html {
+  background: #F4F4F4;
+}
 header {
   position: fixed;
   top: 0;
@@ -12,6 +16,18 @@ nav li {
   padding: 0 1rem;
   display: inline;
   padding: 5px;
+  text-align: center;
+  padding-top: 20px;
+}
+nav a {
+  padding: 0 1rem;
+  display: inline;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  font-size: xx-large;
 }
 nav.scroll {
   background-color: green;
@@ -113,4 +129,7 @@ header.scroll {
     letter-spacing: 1px;
     font-weight: bold;
   }
+.fillerBox {
+  height: 500px;
+  background: yellow;
 }
