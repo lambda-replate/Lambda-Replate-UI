@@ -13,3 +13,25 @@
     flex-direction: @dir;
   }
   
+
+  .defaultbutton(@background, @font-size, @border-radius){
+    background-color: @background;
+    -moz-border-radius:13px;
+    -webkit-border-radius:13px;
+    border-radius: @border-radius;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: @font-size;
+    font-weight:bold;
+    padding:14px 43px;
+    text-decoration:none;
+
+
+.defaultsection(@direction, @justify){
+display: flex;
+flex-direction: @direction;
+justify-content: @justify;
+}
+}
