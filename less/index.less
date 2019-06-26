@@ -209,7 +209,7 @@ footer{
     justify-content: none;
     align-items: center;
     .title {
-      font-size: 12px;
+      font-size: 1rem;
       letter-spacing: 1px;
       font-weight: bold;
       @media (max-width: 800px) {
@@ -382,7 +382,7 @@ footer{
           #stats {
             width: 100px;
             height: 100px;
-            background: #F46B2F;
+            background: #3066BE;
             -moz-border-radius: 50px;
             -webkit-border-radius: 50px;
             border-radius: 50px;
@@ -551,6 +551,8 @@ footer{
 
           .helpers h4 {
             font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: -.5rem;
           }
 
        
@@ -603,6 +605,44 @@ footer{
           position:relative;
           top:1px;
         }
+      }
 
+      //footer
         
+      .formcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .formheader {
+          margin-bottom: -2rem;
         }
+
+        input[type=text], input[type=email], select, textarea{
+          width: 100%;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          resize: vertical;
+          margin-bottom: 1rem;
+        }
+
+        input[type=submit] {
+          background-color: #F46B2F;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: left;
+          
+        }
+      }
+
+      footer {
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: rgb(231, 228, 228);
+        margin-top: 3rem;
+      }
