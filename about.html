@@ -6,14 +6,15 @@
         <title>About Us</title>
         <link href="./css/index.css" rel="stylesheet">
         <script src = "./about.js" async></script> 
+        <script src ="./counter.js" async></script>
       </head>
 
 <body>
   <header id="header1">
     <nav>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="" class="logo">Replate</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html" class="logo">Replate</a>
       <a href="">Services</a>
       <a href="">Contact Us</a>
     </nav>
@@ -45,7 +46,7 @@
     <div class="headline">ORLANDO LOPEZ</div>
     <div class="employee">
       <div class="img-container">
-        <img src="./images/Orlando-Lopez.jpg" />
+        <img src="./images/Orlando-Lopez.jpg" class="bioimage"/>
       </div>
       <span>LAMBDA SENIOR TEAM LEAD</span>
     </div>
@@ -60,7 +61,7 @@
     <div class="headline">CRYSTAL SORIA</div>
     <div class="employee">
       <div class="img-container">
-        <img src="./images/Crystal-Soria.jpg" />
+        <img src="./images/Crystal-Soria.jpg" class="bioimage"/>
       </div>
       <span>LAMBDA UI WEB DEVELOPER</span>
     </div>
@@ -75,7 +76,7 @@
     <div class="headline">EUNICE BAIDEN</div>
     <div class="employee">
       <div class="img-container">
-        <img src="./images/Eunice-Baiden.jpg" />
+        <img src="./images/Eunice-Baiden.jpg" class="bioimage"/>
       </div>
       <span>LAMBDA UI WEB DEVELOPER</span>
     </div>
@@ -90,7 +91,7 @@
     <div class="headline">MICHAEL VANSLEEN</div>
     <div class="employee">
       <div class="img-container">
-        <img src="./images/Michael-VanSleen.jpg" />
+        <img src="./images/Michael-VanSleen.jpg" class="bioimage"/>
       </div>
       <span>LAMBDA FRONTEND ARCHITECTS</span>
     </div>
@@ -105,7 +106,7 @@
     <div class="headline">WILLIAM VANORDER</div>
     <div class="employee">
       <div class="img-container">
-        <img src="./images/William-VanOrder.jpg" />
+        <img src="./images/William-VanOrder.jpg" class="bioimage"/>
       </div>
       <span>LAMBDA FRONTEND ARCHITECTS</span>
     </div>
@@ -120,7 +121,7 @@
     <div class="headline">JOSHUA TIMMONS</div>
     <div class="employee">
       <div class="img-container">
-        <img src="./images/Josh-Timmons.jpg" />
+        <img src="./images/Josh-Timmons.jpg" class="bioimage"/>
       </div>
       <span>LAMBDA BACKEND ARCHITECT</span>
     </div>
@@ -135,15 +136,32 @@
  <!-- MAIN ABOUT US CONTENT -->
  <div id="main">
 
-  <section>
-      <h2 class="hungrycontainer" >WE FEED THE HUNGRY
-      <br />
-      BY ELIMINATING RESTAURANT
-      <br />
-      FOOD WASTE</h2>
-    
-      </section>
+      <!-- //bacground image// -->
+  <section class="bgcontainer">
+      <h2 class="hungrycontainer" >WE HELP END </br> FOOD WASTE</h2>
+
+      <div><img src="images/kitchenbackground.jpg" class="bg" ></div>
+
+    </section>
+
+          <!-- //Stats Counter -->
+    <section class ="statscontainer">
+      <h2 class="statsheader">What is Food Insecurity?</h2>
+
+      <div class="circlecontainer">
+      <div id="stats"><span class="count">40</span></div>
+      <div id="stats"><span class="count">12</span></div>
+      <div id="stats"><span class="count">15</span></div>
+    </div>
+
+      <h3 class="million">MILLION</h3>
+
+      <p class="statspara">40 million Americans, 12 million American children, and 15 million American families suffer from food insecurity every day. This means that many people have a lack of access to food so they can feed their families. In America, hunger is a result of poverty and financial resources. We believe it's time to end this crisis. We have the resources to end hunger in America - will you join us?</p>
+
+    </section>
   
+    <!-- //about content -->
+
   <div class="aboutcontent">
    
         <section class="content-section">
@@ -161,19 +179,22 @@
               <img src="images/restaurant owner 1 small.jpg" class="img-fluid rounded" alt="Restaurant Owner in front of Restaurant">
           </div>
           <div class="text-content">
-            <h2>Everyday People Solving Hunger</h2>
+            <h2>Everyday Volunteers</h2>
             <p>Every day ordinary people like restuarant employees, volunteers, and shelter workers connect to deliver tens of thousands of plates to food insecure families around the country.</p> 
             <p>Our efforts to connect generous helpers aim to decrease the number of people, including 40 million Americans and more than 12 million children, who experience food insecurity.</p>
           </div>
          
         </section>
+
+        <!-- //How you can help -->
     
-        <section class="content-helpers">
+        <section class="contenthelpers">
           <h1 class="howhelp">How You Can Help</h1>
           <p class="helpp">Since 1 in 8 Americans experience food insecurity, chances are that you or someone close to you has been affected by this dehibilitating issue. At Replate, we love working with compassionate, action-driven partners to make a dent in a solvable crisis.</p>
-          <img src="images/foodcollagesmall.jpg" class="foodcollage" alt="Food Collage">
+          <img src="images/wastedfoodtablesmall.jpg" class="foodcollage" alt="Food Collage">
         </section>
     
+        <!-- //Bottom boxes -->
         
         <section class="content-pick">
     
@@ -195,7 +216,34 @@
         </section>
 
  
+        <!-- //FORM -->
 
+        <div class="formcontainer">
+
+            <header class="formheader">
+                <h2>Ready to work together?</h2>
+            </header>
+
+            <p>Fill out the form below to learn how you can help.</p>
+
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col-6 col-12-mobilep">
+                        <input type="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="col-6 col-12-mobilep">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" placeholder="Message" rows="6"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><input type="submit" value="Get in touch" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
 
 
   

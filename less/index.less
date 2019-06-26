@@ -187,7 +187,10 @@ footer{
 // ABOUT US PAGE -- TABS
 
 .tabs {
-  border-bottom: 1rem solid lightgray;
+  border-bottom: .3rem solid lightgray;
+  border-top: .3rem solid lightgray;
+  border-right: .3rem solid lightgray;
+  border-left: .3rem solid lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +204,6 @@ footer{
     width: 95%;
   }
  
-
   .roles {
     display: flex;
     justify-content: none;
@@ -224,7 +226,7 @@ footer{
       justify-content: none;
       align-items: center;
       color: white;
-      background-color: gray;
+      background-color: #87B76E;
       margin: 0 5px;
       padding: 2px 10px;
       font-size: 12px;
@@ -303,17 +305,12 @@ footer{
             flex-direction: column;
           }
 
-          .img-container {
-            padding-right: 3rem;
-            border-right: 1px solid lightgray;
-            height: 8rem;
-      
 
-            img {
-              width: 10rem;
-              @media (max-width: 800px) {
-                width: 100%;
-              }
+          .bioimage {
+            border-radius: 20px;
+            @media (max-width: 800px) {
+               width: 100%;
+            }
             
           
           span {
@@ -323,15 +320,43 @@ footer{
             letter-spacing: 1px;
             font-weight: bold;
         
-          }}}}}}}
+          }}}}}}
     
     // ABOUT US PAGE --- MAIN CONTENT 
+
+    .bg {
+      background-image: url("/images/kitchenbackground.jpg");
+      height: 50%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: .7;
+    }
+
+    .bgcontainer {
+      position: relative; 
+      margin: 0 auto; /* Center it */
+      margin-bottom: 7rem;
+
+    }
+    
+    .bgcontainer .hungrycontainer {
+      position: absolute; /* Position the background text */
+      width: 100%; /* Full width */
+      padding: 20px; /* Some padding */
+    }
 
         .hungrycontainer {
           display: flex;
           justify-content: center;
+          justify-items: center;
           align-items: center;
-          font-size: 2rem;
+          align-content: center;
+          text-align: center;
+          margin-top: 7rem;
+          font-size: 5rem;
+          width: 70%;
           @media (max-width: 800px) {
             width: 100%;
             justify-items: center;
@@ -344,6 +369,42 @@ footer{
             font-size: 2rem;
           }
         }
+
+        //Food Insecurity Stats//
+
+        .statscontainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 5rem;
+          margin-top: -2rem;
+       
+          #stats {
+            width: 100px;
+            height: 100px;
+            background: #F46B2F;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            float:left;
+            margin:5px;
+          }
+          .count
+          {
+            line-height: 100px;
+            color:white;
+            margin-left:30px;
+            font-size:25px;
+          }
+
+          .statspara {
+            width: 50%;
+            text-align: center;
+          }
+    }
+
+
+        //ABOUT US CONTENT SECTION//
 
         .content-section {
           margin-left: 11rem;
@@ -398,7 +459,7 @@ footer{
               }
             }
           
-          }
+          }}
 
 
           //about content//
@@ -411,7 +472,6 @@ footer{
               margin-bottom: 2rem;
               margin-top: 2rem;
             }
-  
           }
        
           .content-section .inverse-content {
@@ -444,51 +504,30 @@ footer{
               display:flex;
             }
           }
-  
         }
 
-  
-        .content-helpers {
+        //How we can help section ABOUT US PAGE //
+
+        .contenthelpers {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
-          width: 90%;
+          width: 100%;
+          margin-top: -2rem;
           @media (max-width: 800px) {
             width: 50%;
           }
            @media (max-width: 500px) {
             width: 50%;
           }  
-        
 
-          .howhelp{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            margin-top: 2rem;
-          }
-       
           .helpp {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 50%;
             margin-top: -.5rem;
+ 
+        }}
 
-          }
-
-          .foodcollage img {
-            border-radius: 10px;
-            width: 70%;
-            @media (max-width: 800px) {
-              width: 30vw;
-            }
-             @media (max-width: 500px) {
-              width: 30vw;
-            }
-          }
-        }
+        //3 Column with Buttons - Bottom About Page//
 
         .content-pick {
           padding-top: 2rem;
@@ -518,6 +557,14 @@ footer{
           .helpers {
             width: 30%;
             margin-bottom: 30px;
+            border: .25rem solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.5rem;
+            background-color: beige;
+
+
             @media (max-width: 800px) {
               width: 80%;
             }
@@ -525,4 +572,37 @@ footer{
               width: 90vw;
             }
           }
-        }}
+        }
+
+        .btn {
+          background-color:#87b76e;
+          -moz-border-radius:28px;
+          -webkit-border-radius:28px;
+          border-radius:28px;
+          border:1px solid #18ab29;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:13px;
+          font-weight:bold;
+          padding:16px 46px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #2f6627;
+          transition-duration: 0.4s;
+          @media (max-width: 500px) {
+            width: 100%;
+            padding: 30px 43px;
+            font-size: 2rem; 
+
+        }
+        .btn:hover {
+          background-color:#5cbf2a;
+        }
+        .btn:active {
+          position:relative;
+          top:1px;
+        }
+
+        
+        }
