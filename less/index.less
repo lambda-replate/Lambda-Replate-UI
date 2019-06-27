@@ -164,7 +164,7 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(177, 177, 177, 0.247);
-  background: url('/images/tablet_1.jpg');
+  background: url("/images/tablet_1.jpg");
   background-size: cover;
 }
 
@@ -504,7 +504,7 @@ footer{
     // ABOUT US PAGE --- MAIN CONTENT 
 
     .bg {
-      background-image: url("images/kitchenbackground.jpg");
+      background-image: url("/images/kitchenbackground.jpg");
       height: 50%;
       width: 100%;
       background-position: center;
@@ -599,6 +599,16 @@ footer{
             font-size:25px;
           }
 
+          .statsheader {
+            @media (max-width: 500px) {
+              text-align: center;
+            }
+            @media (max-width: 800px) {
+              
+          }
+
+          }
+
           .statspara {
             width: 50%;
             text-align: center;
@@ -666,28 +676,38 @@ footer{
 
           //Our Mission Section//
 
-             
-              .text-content {
-                padding-left: 3%;
-                padding-right: 0;
-                @media (max-width: 800px) {
-                  width: 70%;
-                }
-                @media (max-width: 500) {
-                  width: 50%;
-                }
-              }
+             .aboutcontent {
+              margin: 0 auto;
+              // width: 99vw;
+             }
 
+              
               .content-section {
                 display: flex;
                 flex-direction: row;
                 @media (max-width: 800px) {
+                  flex-direction: column;
                   width: 100%;
-                  margin-left: 7rem;
+                  // margin-left: 7rem;
                 }
                 @media (max-width: 500) {
-                  width: 90%;
-                  align-content: center;
+                  flex-direction: column;
+                  width: 100%;
+                  // align-content: center;
+                  // margin-left: 15rem;
+                }
+
+                .text-content {
+                  padding-left: 3%;
+                  padding-right: 0;
+                  @media (max-width: 800px) {
+                    width: 70%;
+                    padding-left: 0;
+                  }
+                  @media (max-width: 500) {
+                    width: 50%;
+                    // margin-right: 5vw;  
+                  }
                 }
               }
 
@@ -696,7 +716,7 @@ footer{
                 display: flex;
                 flex-direction: row;
                 width: 75%;
-                justify-items: center;
+                align-items: center;
                 margin-left: 10rem;
                 @media (max-width: 800px) {
                   display: flex;
@@ -709,9 +729,33 @@ footer{
                 @media (max-width: 500px) {
                   display: flex;
                   flex-direction: column-reverse;
-                  padding-right: 15rem;
+                  margin-bottom: 10%;
+                  margin-left: 1rem;
+                  margin-right: 5rem;
+                  margin-top: 2rem;
+                }
+                
+                .text-content {
+                  padding-left: 3%;
+                  padding-right: 0;
+                  @media (max-width: 800px) {
+                    width: 70%;
+                  }
+                  @media (max-width: 500) {
+                    width: 50%;
+                    padding-left: 0;
+                    margin-right: 0;
+  
+                  }
                 }
               }
+      
+              // .closeimg {
+              //   @media(max-width: 500) {
+              //     display: none;
+              //   }
+              // }
+
 
             
       
@@ -736,6 +780,7 @@ footer{
             }
              @media (max-width: 500px) {
               margin-left: 1.7rem;
+              text-align: center;
             }  
           }
 
@@ -791,7 +836,7 @@ footer{
             flex-direction: column;
             justify-content: space-between;
             padding: 1.5rem;
-            background-color: beige;
+            background-color: rgb(194, 209, 233);
             @media (max-width: 800px) {
               width: 80%;
             }
@@ -828,7 +873,17 @@ footer{
             .btn:active {
               position:relative;
               top:1px;
+              border: none;
+              outline: none;
             }
+            
+            .btn:focus { 
+              outline: none; 
+            }
+      }
+
+      *:focus {
+        outline:none !important
       }
 
       //form section

@@ -9,12 +9,15 @@ class TabLink {
    
       } else {
         this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
-   
+      
+      };
+
       this.cards = Array.from(this.cards).map(card => new TabCard(card));
    
       this.tabElement.addEventListener('click', (event) => this.selectTab(event));
-      };}
-   
+
+    }
+
    
     selectTab(){
       
