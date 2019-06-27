@@ -164,7 +164,7 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(177, 177, 177, 0.247);
-  background: url('/images/tablet_1.jpg');
+  background: url("/images/tablet_1.jpg");
   background-size: cover;
 }
 
@@ -678,7 +678,7 @@ footer{
 
              .aboutcontent {
               margin: 0 auto;
-              width: 99vw;
+              // width: 99vw;
              }
 
               
@@ -688,17 +688,13 @@ footer{
                 @media (max-width: 800px) {
                   flex-direction: column;
                   width: 100%;
-                  margin-left: 7rem;
+                  // margin-left: 7rem;
                 }
                 @media (max-width: 500) {
                   flex-direction: column;
                   width: 100%;
-                  margin-bottom: 10%;
-                  justify-items: center;
-                  margin-left: .5rem;
-                  margin-right: 2rem;
-                  padding-bottom: 30px;
-
+                  // align-content: center;
+                  // margin-left: 15rem;
                 }
 
                 .text-content {
@@ -706,11 +702,11 @@ footer{
                   padding-right: 0;
                   @media (max-width: 800px) {
                     width: 70%;
+                    padding-left: 0;
                   }
                   @media (max-width: 500) {
                     width: 50%;
-                    margin-right: 5vw;
-  
+                    // margin-right: 5vw;  
                   }
                 }
               }
@@ -720,7 +716,7 @@ footer{
                 display: flex;
                 flex-direction: row;
                 width: 75%;
-                justify-items: center;
+                align-items: center;
                 margin-left: 10rem;
                 @media (max-width: 800px) {
                   display: flex;
@@ -734,6 +730,9 @@ footer{
                   display: flex;
                   flex-direction: column-reverse;
                   margin-bottom: 10%;
+                  margin-left: 1rem;
+                  margin-right: 5rem;
+                  margin-top: 2rem;
                 }
                 
                 .text-content {
@@ -744,17 +743,18 @@ footer{
                   }
                   @media (max-width: 500) {
                     width: 50%;
-                    margin-right: 5vw;
+                    padding-left: 0;
+                    margin-right: 0;
   
                   }
                 }
               }
       
-              // .img-content {
-              //   @media (max-width: 500) {
-              //     justify-items: center;
+              // .closeimg {
+              //   @media(max-width: 500) {
+              //     display: none;
+              //   }
               // }
-
 
 
             
