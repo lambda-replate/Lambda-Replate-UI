@@ -88,8 +88,9 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 .parallax{
  height: 600px;
    background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(243, 243, 243, 0.781)),
-    url('/images/elaine-casap-qgHGDbbSNm8-unsplash.jpg')no-repeat center center;
+    url('/images/elaine-casap-qgHGDbbSNm8-unsplash.jpg')no-repeat center center fixed;
     background-size: cover;
+    
 }
 
 .titlearea{
@@ -163,7 +164,10 @@ h2{
 .services{
    padding: 15px;
     margin: 0 auto; //possible mixin
- background-color: rgb(27, 27, 27);
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 10%;
  color: white;
  text-align: center;
 }
@@ -175,6 +179,76 @@ h2{
     background: lightgrey;
     padding: 20px;
     margin: 25px;
+}
+.app-content{
+  display: flex;
+  position: relative;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.app-design{
+  height: 400px;
+  width: 200px;
+  background: yellowgreen;
+  background: url('/images/replate_app_demo1.jpg') no-repeat center center;
+  background-size: cover;
+  border: 10px solid white;
+
+  border-radius: 50px;
+
+  -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  transform: rotate(10deg);
+  margin-left: 300px;
+
+}
+.app-design2{
+  height: 400px;
+  width: 200px;
+  background: yellowgreen;
+  background: url('/images/replate_app_demo1.jpg') no-repeat center center;
+  background-size: cover;
+  border: 10px solid white;
+
+  border-radius: 50px;
+
+  -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  transform: rotate(10deg);
+  margin-left: 150px;
+  margin-top: -350px;
+
+}
+.appscollection{
+  width: 50%;
+  height: 400px;
+  margin-left: 10%;
+}
+.call {
+  margin-right: 5%;
+  width: 50%;
+  height: 400px;
+  h2{
+    margin-top: 20%;
+    
+  }
+
+  .call-btn{
+    height: 70px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
 }
 
 .team{
