@@ -8,6 +8,7 @@
         <script src = "./about.js" async></script> 
         <script src ="./counter.js" async></script>
         <script src ="./abtevents.js" async></script>
+        <script src="./js/menu.js"></script>
       </head>
 
 <body>
@@ -141,7 +142,7 @@
   <section class="bgcontainer">
       <h2 class="hungrycontainer" >WE HELP END </br> FOOD WASTE</h2>
 
-      <div><img src="images/kitchenbackground.jpg" class="bg" ></div>
+      <div><img src="./images/kitchenbackground.jpg" class="bg" ></div>
 
     </section>
 
@@ -228,20 +229,20 @@
 
             <p>Fill out the form below to Download the App and Get Involved.</p>
 
-            <form method="post" action="#">
+            <form target="_blank" action="https://distracted-kare-3a90a8.netlify.com/business-sign-up" method="post">
                 <div class="row">
-                    <div class="col-6 col-12-mobilep">
+                    <div class="formname">
                         <input type="text" name="name" placeholder="Name" />
                     </div>
-                    <div class="col-6 col-12-mobilep">
+                    <div class="formemail">
                         <input type="email" name="email" placeholder="Email" />
                     </div>
-                    <div class="col-12">
+                    <div class="formmessage">
                         <textarea name="message" placeholder="Are you a Restaurant, Volunteer, Non-profit, or Other?" rows="6"></textarea>
                     </div>
-                    <div class="col-12">
+                    <div class="submitform">
                         <div class="formbutton">
-                            <input type="submit" value="DOWNLOAD NOW" />
+                            <input onclick="window.location.href = 'https://distracted-kare-3a90a8.netlify.com/business-sign-up';" type="submit" value="DOWNLOAD NOW" />
                         </div>
                     </div>
                 </div>
