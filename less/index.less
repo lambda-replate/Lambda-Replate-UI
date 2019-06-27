@@ -28,7 +28,6 @@ nav {
       padding: 10px;
       text-decoration: none;
       color: black;
-      //float: right;
      }
  }
 
@@ -53,11 +52,6 @@ header.scroll {
 box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 }
 
-
-.fillerBox{
-  height: 500px;
-  background: yellow;
-}
 
 // ABOUT US PAGE//
 
@@ -87,7 +81,12 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 
 .parallax{
  height: 600px;
-   background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(243, 243, 243, 0.781)),
+//  background: #FF416C;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to top, rgba(255, 75, 43, 0.356), rgba(255, 65, 109, 0.185));  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to top, rgba(255, 75, 43, 0.356), rgba(255, 65, 109, 0.185)), /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(243, 243, 243, 0.863)),
+   
     url('/images/elaine-casap-qgHGDbbSNm8-unsplash.jpg')no-repeat center center fixed;
     background-size: cover;
     
@@ -109,7 +108,7 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 h1 {
     padding-top: 2%;
     margin-left: -70px;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .sash1 {
@@ -162,7 +161,8 @@ h2{
 }
 
 .services{
-   padding: 15px;
+   padding: 5%;
+
     margin: 0 auto; //possible mixin
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
