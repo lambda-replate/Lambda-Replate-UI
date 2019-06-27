@@ -80,7 +80,7 @@ header.scroll {
 }
 .parallax {
   height: 600px;
-  background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(243, 243, 243, 0.863)), url('/images/elaine-casap-qgHGDbbSNm8-unsplash.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(243, 243, 243, 0.863)), url('../images/elaine-casap-qgHGDbbSNm8-unsplash.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 .titlearea {
@@ -204,13 +204,13 @@ h1 {
 }
 .stat-box-left {
   width: 50%;
-  background: url('/images/wastedfoodtable_rotated.jpg');
+  background: url('../images/wastedfoodtable_rotated.jpg');
   background-size: cover;
 }
 @media (max-width: 600px) {
   .stat-box-left {
     width: 100%;
-    background: url('/images/wastedfoodtable.jpg');
+    background: url('../images/wastedfoodtable.jpg');
     background-size: cover;
     height: 40%;
   }
@@ -288,7 +288,7 @@ h2 {
   height: 400px;
   width: 200px;
   background: yellowgreen;
-  background: url('/images/replate_app_demo1.jpg') no-repeat center center;
+  background: url('../images/replate_app_demo1.jpg') no-repeat center center;
   background-size: cover;
   border: 10px solid white;
   border-radius: 50px;
@@ -308,7 +308,7 @@ h2 {
   height: 400px;
   width: 200px;
   background: yellowgreen;
-  background: url('/images/replate_app_demo1.jpg') no-repeat center center;
+  background: url('../images/replate_app_demo1.jpg') no-repeat center center;
   background-size: cover;
   border: 10px solid white;
   border-radius: 50px;
