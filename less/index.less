@@ -227,6 +227,11 @@ h2{
     margin-bottom: 10%;
  color: white;
  text-align: center;
+ @media (max-width: 600px) {
+  margin-bottom: 20%;
+  padding-left: 0px;
+    padding-right: 0px;
+ }
 }
 
 .box1{
@@ -238,11 +243,14 @@ h2{
     margin: 25px;
 }
 .app-content{
-  display: flex;
+  display: auto;
   position: relative;
   top: 50%;
   justify-content: center;
   align-items: center;
+  @media (max-width: 600px) {
+    //margin-left: -50px;
+   }
 }
 .app-design{
   height: 400px;
@@ -259,6 +267,10 @@ h2{
   box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
   transform: rotate(10deg);
   margin-left: 300px;
+  @media (max-width: 600px) {
+    width: 65%;
+    height: 85%;
+   }
 
 }
 .app-design2{
@@ -277,20 +289,35 @@ h2{
   transform: rotate(10deg);
   margin-left: 150px;
   margin-top: -350px;
-
+  @media (max-width: 600px) {
+    width: 65%;
+    height: 85%;
+   }
 }
 .appscollection{
   width: 50%;
   height: 400px;
   margin-left: 10%;
+  @media (max-width: 600px) {
+    margin-left: -50px;
+   }
 }
 .call {
   margin-right: 5%;
   width: 50%;
   height: 400px;
+  background: red;
+  @media (max-width: 600px) {
+    height: auto;
+  width: 90%;
+  margin-left: 50px;
+  background: yellow; 
+
+  }
   h2{
-    margin-top: 20%;
-    
+    margin-top: auto;
+     @media (max-width: 600px) {
+  width: 90%;
   }
 
   .call-btn{
@@ -327,11 +354,18 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     padding: 5px;
     border: 1px solid grey;
     background: white;
+    @media (max-width: 600px) {
+      width: 100%;
+     }
   }
   textarea{
     padding: 5px;
     margin-left: 5px;
-    width: 436px;
+    //width: 50%;
+   width: 436px;
+   @media (max-width: 600px) {
+    width: 100%;
+   }
   }
   input[type="Submit"]{
     padding: 10px;
@@ -346,11 +380,14 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-
+  @media (max-width: 600px) {
+    //background: yellow;
+   }
 }
 
 .contact{
   margin-bottom: 5%;
+  
 }
 
 footer{
