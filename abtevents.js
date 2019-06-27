@@ -29,13 +29,13 @@ bgHeadHover.addEventListener('mouseover', function (event) {
 
 // mouseover/mouseleave: text getting bigger then shrinking
 
-const titlePeople = document.querySelectorAll('.headline');
+const formHeader = document.querySelector('.formheader');
 
-titlePeople.addEventListener('mouseover', (event) => {
-   event.target.style.fontSize = '2.2rem';
+formHeader.addEventListener('mouseover', (event) => {
+   event.target.style.fontSize = '2rem';
    event.stopPropagation;
 });
-titlePeople.addEventListener('mouseleave', (event) => {
-   event.target.style.fontSize = '2rem';
+formHeader.addEventListener('mouseleave', (event) => {
+   event.target.style.fontSize = '1rem';
    event.stopPropagation;
 });
