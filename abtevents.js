@@ -33,7 +33,7 @@ const titlePeople = document.querySelectorAll('.headline');
 
 titlePeople.addEventListener('mouseover', (event) => {
    event.target.style.fontSize = '2.2rem';
-   event.stopPropagation
+   event.stopPropagation;
 });
 titlePeople.addEventListener('mouseleave', (event) => {
    event.target.style.fontSize = '2rem';
