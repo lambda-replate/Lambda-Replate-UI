@@ -46,4 +46,3 @@ class TabLink {
    
    
    let tabs = document.querySelectorAll('.tab').forEach( element => new TabLink(element));
-

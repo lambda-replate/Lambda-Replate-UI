@@ -65,14 +65,16 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 
  @media (max-width: 800px) {
   width: 100%;
-  align-items: center;
+  justify-content: center;
+  margin-left: .5rem;
 }
 
  @media (max-width: 500px) {
   width: 100%;
-  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   margin-top: 6rem;
+  margin-left: .5rem;
 }
 }
 
@@ -187,7 +189,10 @@ footer{
 // ABOUT US PAGE -- TABS
 
 .tabs {
-  border-bottom: 1rem solid lightgray;
+  border-bottom: .3rem solid lightgray;
+  border-top: .3rem solid lightgray;
+  border-right: .3rem solid lightgray;
+  border-left: .3rem solid lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,21 +206,23 @@ footer{
     width: 95%;
   }
  
-
   .roles {
     display: flex;
     justify-content: none;
     align-items: center;
     .title {
-      font-size: 12px;
+      font-size: 1rem;
       letter-spacing: 1px;
       font-weight: bold;
       @media (max-width: 800px) {
         width: 100%;
+        margin-left: .4rem;
       }
        @media (max-width: 500px) {
         width: 100%;
         flex-direction: column;
+        margin-left: .4rem;
+        display: none;
       }
     }
 
@@ -224,7 +231,7 @@ footer{
       justify-content: none;
       align-items: center;
       color: white;
-      background-color: gray;
+      background-color: #87B76E;
       margin: 0 5px;
       padding: 2px 10px;
       font-size: 12px;
@@ -286,13 +293,14 @@ footer{
           font-size: 2rem;
           display: flex;
           justify-content: center;
-          margin-bottom: 1.4rem;
+          margin-bottom: -2rem;
           font-weight: bold;
-        
+        }
         .employee {
           display: flex;
           justify-content: none;
           align-items: center;
+          flex-direction: column;
           margin-top: 5rem;
           @media (max-width: 800px) {
             width: 100%;
@@ -301,49 +309,131 @@ footer{
             width: 100%;
             display: flex;
             flex-direction: column;
-          }
+           }
 
-          .img-container {
-            padding-right: 3rem;
-            border-right: 1px solid lightgray;
-            height: 8rem;
-      
-
-            img {
-              width: 10rem;
-              @media (max-width: 800px) {
-                width: 100%;
-              }
-            
-          
-          span {
-            display: flex;
-            justify-content: center;
-            font-size: 2rem;
+           .lambdarole {
+            font-size: 1rem;
             letter-spacing: 1px;
             font-weight: bold;
-        
-          }}}}}}}
+          }
+        }  
+
+        }}
+      
+          
+          .bioimage {
+            border-radius: 50px;
+            @media (max-width: 800px) {
+               width: 100%;
+            }
+          }
     
     // ABOUT US PAGE --- MAIN CONTENT 
+
+    .bg {
+      background-image: url("images/kitchenbackground.jpg");
+      height: 50%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: .7;
+      @media (max-width: 500px) {
+        display: none;
+      }
+      @media (max-width: 800px) {
+        display: none;
+    }
+    }
+
+    .bgcontainer {
+      position: relative; 
+      margin: 0 auto; 
+      margin-bottom: 7rem;
+      @media (max-width: 500px) {
+        display: none;
+      }
+      @media (max-width: 800px) {
+        display: none;
+    }
+    }
+    
+    .bgcontainer .hungrycontainer {
+      position: absolute; 
+      width: 100%;
+      padding: 20px; 
+      @media (max-width: 500px) {
+        display: none;
+      }
+      @media (max-width: 800px) {
+        display: none;
+    }
+  }
+    
 
         .hungrycontainer {
           display: flex;
           justify-content: center;
+          justify-items: center;
           align-items: center;
-          font-size: 2rem;
+          align-content: center;
+          text-align: center;
+          margin-top: 7rem;
+          font-size: 5rem;
+          width: 70%;
           @media (max-width: 800px) {
-            width: 100%;
-            justify-items: center;
-            margin-left: 2rem;
+            display: none;
 
           }
            @media (max-width: 500px) {
-            width: 100%;
-            margin-left: 4rem;
-            font-size: 2rem;
+            display: none;
           }
         }
+
+
+        //Food Insecurity Stats//
+
+        .statscontainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 5rem;
+          margin-top: -2rem;
+          @media (max-width: 500px) {
+            margin-top: 1rem;
+            margin-bottom: -1rem;
+          }
+          @media (max-width: 800px) {
+            margin-top: 1rem;
+            margin-bottom: -1rem;
+        }
+       
+          #stats {
+            width: 100px;
+            height: 100px;
+            background: #3066BE;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            float:left;
+            margin:5px;
+          }
+          .count
+          {
+            line-height: 100px;
+            color:white;
+            margin-left:30px;
+            font-size:25px;
+          }
+
+          .statspara {
+            width: 50%;
+            text-align: center;
+          }
+    }
+
+
+        //ABOUT US CONTENT SECTION//
 
         .content-section {
           margin-left: 11rem;
@@ -398,101 +488,107 @@ footer{
               }
             }
           
-          }
+          }}
 
 
-          //about content//
+          //Our Mission Section//
 
-          .aboutcontent{
-            @media (max-width: 800px) {
-              width: 75%;
-              margin-left: 2rem;
-              margin-right: 2rem;
-              margin-bottom: 2rem;
-              margin-top: 2rem;
-            }
-  
-          }
-       
-          .content-section .inverse-content {
-          padding-bottom: 30px;
+             
+              .text-content {
+                padding-left: 3%;
+                padding-right: 0;
+                @media (max-width: 800px) {
+                  width: 70%;
+                }
+                @media (max-width: 500) {
+                  width: 50%;
+                }
+              }
+
+              .content-section {
+                display: flex;
+                flex-direction: row;
+                @media (max-width: 800px) {
+                  width: 100%;
+                  margin-left: 7rem;
+                }
+                @media (max-width: 500) {
+                  width: 90%;
+                  align-content: center;
+                }
+              }
+
+              .inverse-content {
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: row;
+                width: 75%;
+                justify-items: center;
+                margin-left: 10rem;
+                @media (max-width: 800px) {
+                  display: flex;
+                  flex-direction: column-reverse;
+                  align-content: center;
+                  width: 100%;
+                  margin-left: 5rem;
+                  margin-top: -2rem;
+                }
+                @media (max-width: 500px) {
+                  display: flex;
+                  flex-direction: column-reverse;
+                  padding-right: 15rem;
+                }
+              }
+
+            
+      
+        //How we can help section ABOUT US PAGE //
+
+        .contenthelpers {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin-top: -2rem;
           @media (max-width: 800px) {
-            display: flex;
-            flex-direction: column-reverse;
-            align-content: center;
             width: 100%;
-            margin-left: 5rem;
           }
            @media (max-width: 500px) {
-            display: flex;
-            flex-direction: column-reverse;
-          }
-        
-          .text-content {
-            padding-left: 1%;
-            padding-right: 0;
-          }
-       
-          .img-content {
-            padding-right: 1%;
-            padding-left: 0;
-            @media (max-width: 800px) {
-              
+            width: 100%;
+          }  
+
+          .howhelp {
+            @media  (max-width: 800px) {
+              margin-left: .5rem;
             }
              @media (max-width: 500px) {
-              width: 90vw;
-              display:flex;
-            }
+              margin-left: 1.7rem;
+            }  
           }
-  
-        }
 
-  
-        .content-helpers {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 90%;
-          @media (max-width: 800px) {
-            width: 50%;
-          }
-           @media (max-width: 500px) {
-            width: 50%;
-          }  
-        
-
-          .howhelp{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            margin-top: 2rem;
-          }
-       
           .helpp {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 50%;
             margin-top: -.5rem;
-
-          }
-
-          .foodcollage img {
-            border-radius: 10px;
-            width: 70%;
             @media (max-width: 800px) {
-              width: 30vw;
+              width: 60%;
             }
              @media (max-width: 500px) {
-              width: 30vw;
-            }
-          }
+              width: 70%;
+            }  
         }
+          .foodcollage {
+            @media (max-width: 500px) {
+              width: 80%;
+            }  
+          }
+      }
+
+        //3 Column with Buttons - Bottom About Page//
 
         .content-pick {
           padding-top: 2rem;
           display: flex;
+          flex-direction: row;
           justify-content: space-between;
           margin-right: 7rem;
           margin-left: 7rem;
@@ -504,24 +600,102 @@ footer{
            @media (max-width: 500px) {
             display:flex;
             flex-direction: column;
-            width: 80%;
             margin-right: 2rem;
             margin-left: 1rem;
           }
 
           .helpers h4 {
             font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: -.5rem;
           }
 
        
           .helpers {
-            width: 30%;
             margin-bottom: 30px;
+            border: .25rem solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.5rem;
+            background-color: beige;
             @media (max-width: 800px) {
               width: 80%;
             }
              @media (max-width: 500px) {
-              width: 90vw;
+              width: 90%;
             }
           }
-        }}
+        }
+
+        .btn {
+          background-color:#87b76e;
+          -moz-border-radius:28px;
+          -webkit-border-radius:28px;
+          border-radius:28px;
+          border:1px solid #18ab29;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:13px;
+          font-weight:bold;
+          padding:16px 46px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #2f6627;
+          transition-duration: 0.4s;
+           @media (max-width: 500px) {
+            width: 50%;
+            margin-left: 6rem;
+          }
+        
+            .btn:hover {
+              background-color:#5cbf2a;
+            }
+            .btn:active {
+              position:relative;
+              top:1px;
+            }
+      }
+
+      //form section
+        
+      .formcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .formheader {
+          margin-bottom: -2rem;
+        }
+
+        input[type=text], input[type=email], select, textarea{
+          width: 100%;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          resize: vertical;
+          margin-bottom: 1rem;
+        }
+
+        input[type=submit] {
+          background-color: #F46B2F;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: left;
+          
+        }
+      }
+
+      //footer
+
+      footer {
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: rgb(231, 228, 228);
+        margin-top: 3rem;
+      }
