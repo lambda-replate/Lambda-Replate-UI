@@ -39,3 +39,25 @@ formHeader.addEventListener('mouseleave', (event) => {
    event.target.style.fontSize = '1rem';
    event.stopPropagation;
 });
+
+
+//mouseover/mouseleave on buttons
+
+const helpHeader = document.querySelector('.howhelp');
+
+helpHeader.addEventListener('mouseover', (event) => {
+   event.target.style.fontSize = '5rem';
+   event.stopPropagation;
+});
+helpHeader.addEventListener('mouseleave', (event) => {
+   event.target.style.fontSize = '3rem';
+   event.stopPropagation;
+});
+
+
+
+//getting text content of an element
+
+var helpParagraph = document.querySelector('.helpp');
+text = helpParagraph.textContent || helpParagraph.innerText;
+console.log(text);

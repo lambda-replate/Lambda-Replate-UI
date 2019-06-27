@@ -504,7 +504,7 @@ footer{
     // ABOUT US PAGE --- MAIN CONTENT 
 
     .bg {
-      background-image: url("images/kitchenbackground.jpg");
+      background-image: url("/images/kitchenbackground.jpg");
       height: 50%;
       width: 100%;
       background-position: center;
@@ -599,6 +599,16 @@ footer{
             font-size:25px;
           }
 
+          .statsheader {
+            @media (max-width: 500px) {
+              text-align: center;
+            }
+            @media (max-width: 800px) {
+              
+          }
+
+          }
+
           .statspara {
             width: 50%;
             text-align: center;
@@ -666,28 +676,42 @@ footer{
 
           //Our Mission Section//
 
-             
-              .text-content {
-                padding-left: 3%;
-                padding-right: 0;
-                @media (max-width: 800px) {
-                  width: 70%;
-                }
-                @media (max-width: 500) {
-                  width: 50%;
-                }
-              }
+             .aboutcontent {
+              margin: 0 auto;
+              width: 99vw;
+             }
 
+              
               .content-section {
                 display: flex;
                 flex-direction: row;
                 @media (max-width: 800px) {
+                  flex-direction: column;
                   width: 100%;
                   margin-left: 7rem;
                 }
                 @media (max-width: 500) {
-                  width: 90%;
-                  align-content: center;
+                  flex-direction: column;
+                  width: 100%;
+                  margin-bottom: 10%;
+                  justify-items: center;
+                  margin-left: .5rem;
+                  margin-right: 2rem;
+                  padding-bottom: 30px;
+
+                }
+
+                .text-content {
+                  padding-left: 3%;
+                  padding-right: 0;
+                  @media (max-width: 800px) {
+                    width: 70%;
+                  }
+                  @media (max-width: 500) {
+                    width: 50%;
+                    margin-right: 5vw;
+  
+                  }
                 }
               }
 
@@ -709,9 +733,29 @@ footer{
                 @media (max-width: 500px) {
                   display: flex;
                   flex-direction: column-reverse;
-                  padding-right: 15rem;
+                  margin-bottom: 10%;
+                }
+                
+                .text-content {
+                  padding-left: 3%;
+                  padding-right: 0;
+                  @media (max-width: 800px) {
+                    width: 70%;
+                  }
+                  @media (max-width: 500) {
+                    width: 50%;
+                    margin-right: 5vw;
+  
+                  }
                 }
               }
+      
+              // .img-content {
+              //   @media (max-width: 500) {
+              //     justify-items: center;
+              // }
+
+
 
             
       
@@ -736,6 +780,7 @@ footer{
             }
              @media (max-width: 500px) {
               margin-left: 1.7rem;
+              text-align: center;
             }  
           }
 
@@ -828,7 +873,17 @@ footer{
             .btn:active {
               position:relative;
               top:1px;
+              border: none;
+              outline: none;
             }
+            
+            .btn:focus { 
+              outline: none; 
+            }
+      }
+
+      *:focus {
+        outline:none !important
       }
 
       //form section
