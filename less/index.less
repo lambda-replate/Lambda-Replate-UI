@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 html{
     background: #F4F4F4;
-    font-size: 16px
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Josefin Sans', sans-serif;
     
   }
 
@@ -10,7 +15,7 @@ header{
    left: 0;
    right: 0;
    height: 80px;
-   z-index: 1;
+   z-index: 2;
  }
 
 nav {
@@ -23,7 +28,6 @@ nav {
       padding: 10px;
       text-decoration: none;
       color: black;
-      //float: right;
      }
  }
 
@@ -48,11 +52,6 @@ header.scroll {
 box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 }
 
-
-.fillerBox{
-  height: 500px;
-  background: yellow;
-}
 
 // ABOUT US PAGE//
 
@@ -84,9 +83,15 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 
 .parallax{
  height: 600px;
-   background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(243, 243, 243, 0.781)),
-    url('/images/elaine-casap-qgHGDbbSNm8-unsplash.jpg')no-repeat center center;
+//  background: #FF416C;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to top, rgba(255, 75, 43, 0.356), rgba(255, 65, 109, 0.185));  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to top, rgba(255, 75, 43, 0.356), rgba(255, 65, 109, 0.185)), /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(243, 243, 243, 0.863)),
+   
+    url('/images/elaine-casap-qgHGDbbSNm8-unsplash.jpg')no-repeat center center fixed;
     background-size: cover;
+    
 }
 
 .titlearea{
@@ -95,6 +100,7 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
     margin: 0 auto; //possible mixin
   width: 70%;
   padding: 50px;
+  // background: yellow;
 }
 
 .box{
@@ -102,10 +108,64 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
     height: 200px;
     background: darkorange;
 }
+
+.call-message{
+  width: 40%;
+  padding-top: 2%;
+  margin-left: 70px;
+  text-align: center;
+
+  h2{
+    font-size: 1.5em;
+  }
+}
 h1 {
-    padding-top: 2%;
-    margin-left: -70px;
-    font-size: 3em;
+    
+    font-size: 3.5em;
+    font-weight: 2em;;
+    
+}
+
+
+.top-btn{
+  padding: 10px;
+  margin-top: 20px;
+  height: 70px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.tabletillustration{
+  margin-top: 5%;
+  position: abolute;
+  height: 350px;
+  width: 550px;
+  background: white;
+  
+  //border: 20px 5px solid olivedrab;
+  border-color: white;
+  border-style: solid solid solid solid;
+  border-width: 10px 30px 10px 30px;
+  border-radius: 10px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+}
+
+.innertablet{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(177, 177, 177, 0.247);
+  background: url('/images/tablet_1.jpg');
+  background-size: cover;
 }
 
 .sash1 {
@@ -128,7 +188,7 @@ h1 {
 
 .statsbox{
     margin: 0 auto; //possible mixin
-  width: 60%;
+  width: 65%;
   display: flex;
   height: 600px;
 }
@@ -158,9 +218,13 @@ h2{
 }
 
 .services{
-   padding: 15px;
+   padding: 5%;
+
     margin: 0 auto; //possible mixin
- background-color: rgb(27, 27, 27);
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 10%;
  color: white;
  text-align: center;
 }
@@ -173,11 +237,120 @@ h2{
     padding: 20px;
     margin: 25px;
 }
+.app-content{
+  display: flex;
+  position: relative;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.app-design{
+  height: 400px;
+  width: 200px;
+  background: yellowgreen;
+  background: url('/images/replate_app_demo1.jpg') no-repeat center center;
+  background-size: cover;
+  border: 10px solid white;
+
+  border-radius: 50px;
+
+  -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  transform: rotate(10deg);
+  margin-left: 300px;
+
+}
+.app-design2{
+  height: 400px;
+  width: 200px;
+  background: yellowgreen;
+  background: url('/images/replate_app_demo1.jpg') no-repeat center center;
+  background-size: cover;
+  border: 10px solid white;
+
+  border-radius: 50px;
+
+  -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
+  transform: rotate(10deg);
+  margin-left: 150px;
+  margin-top: -350px;
+
+}
+.appscollection{
+  width: 50%;
+  height: 400px;
+  margin-left: 10%;
+}
+.call {
+  margin-right: 5%;
+  width: 50%;
+  height: 400px;
+  h2{
+    margin-top: 20%;
+    
+  }
+
+  .call-btn{
+    height: 70px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+}
 
 .team{
     margin: 0 auto; //possible mixin
     width: 70%; 
 
+}
+
+.contact{
+  //margin-bottom: 5%;
+  margin: 0 auto; //possible mixin
+  width: 70%; 
+  text-align: center;
+
+  input{
+    height: 40px;
+    width: 200px; 
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid grey;
+    background: white;
+  }
+  textarea{
+    padding: 5px;
+    margin-left: 5px;
+    width: 436px;
+  }
+  input[type="Submit"]{
+    padding: 10px;
+    margin-top: 20px;
+    height: 70px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    background: #76b852;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+}
+
+.contact{
+  margin-bottom: 5%;
 }
 
 footer{
