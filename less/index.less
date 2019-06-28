@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
+@lambda-red: rgb(147,29,37);
+@lambda-light-red: lighten(@lambda-red,10%);
+@white: rgb(255,255,255);
+
+
+
 html{
   
     background: #F4F4F4;
@@ -104,6 +110,14 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
   @media (max-width: 600px) {
     display: block;
    }
+
+   @media (max-width: 800px) {
+     h1{
+       width: auto;
+       margin-left: 0px;
+     }
+    
+   }
 }
 
 .box{
@@ -130,7 +144,6 @@ h1 {
     
     font-size: 3.5em;
     font-weight: 2em;;
-    
 }
 
 
@@ -146,6 +159,9 @@ h1 {
   background: #0052D4;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@media (max-width: 800px) {
+  margin-top: -4px;
+}
 
 }
 .tabletillustration{
@@ -158,7 +174,7 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
   //border: 20px 5px solid olivedrab;
   border-color: white;
   border-style: solid solid solid solid;
-  border-width: 10px 30px 10px 30px;
+  border-width: 30px 10px 30px 10px;
   border-radius: 10px;
   z-index: 1;
   -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
@@ -168,6 +184,11 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     display: none;
     
    }
+  @media (max-width: 800px) {
+    height: 350px;
+  width: 550px;
+    
+   }
 }
 
 .innertablet{
@@ -175,8 +196,14 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(177, 177, 177, 0.247);
-  background: url("../images/tablet_1.jpg");
+  background: url("../images/tablet_3.jpg")no-repeat center center;
   background-size: cover;
+  @media (max-width: 800px) {
+  //   height: 350px;
+  // width: 550px;
+  background: url("../images/iphone_1.jpg")no-repeat center center;
+  background-size: cover;
+   }
 }
 
 .sash1 {
@@ -188,8 +215,11 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     bottom: 0px;
   @media (max-width: 600px) {
     background-image: linear-gradient(to right top, white 0%, white 50%, transparent 0%);
-    top: 50px;
-    height: 25%;
+    top: 81px;
+    height: 20%;
+  }
+  @media (max-width: 800px) {
+    //top: -9px;
   }
 
 }
@@ -200,6 +230,9 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     width:  98.5%;
     height: 30%;
     @media (max-width: 600px) {
+      height: 20%;
+    }
+    @media (max-width: 800px) {
       height: 20%;
     }
     //top: 103%; 
@@ -217,6 +250,12 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     width: auto;
     margin-bottom: -40px;
    }
+   @media (max-width: 800px) {
+      width: auto;
+      
+    }
+
+   
   
 }
 
@@ -237,14 +276,24 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
 .stat-box-right{
     padding-top: 170px;
     padding-left: 20px;
-    width: 50%;
+    
     background: rgb(158, 197, 133);
     @media (max-width: 600px) {
       padding-top: 15px;
       padding-bottom: 15px;
-      width: 100%;
+      width: auto;
       background-size: cover;
      }
+
+     @media (max-width: 800px) {
+      //width: 100%;
+      
+    }
+
+    @media (min-width: 801px) {
+      width: 50%;
+      
+    }
 }
 
 h2{
@@ -278,6 +327,12 @@ h2{
   padding-left: 0px;
     padding-right: 0px;
  }
+ @media (max-width: 800px) {
+  //height: 0;
+ padding-left: 0;
+ padding-bottom: 0px;
+margin-right: 0px;
+}
 }
 
 .box1{
@@ -298,6 +353,11 @@ h2{
     display: block;
     //margin-left: -50px;
    }
+
+   @media (max-width: 800px) {
+    top: -9px;
+    display: block;
+  }
 }
 .app-design{
   height: 400px;
@@ -315,8 +375,10 @@ h2{
   transform: rotate(10deg);
   margin-left: 300px;
   @media (max-width: 600px) {
-    width: 65%;
-    height: 85%;
+    width: 130px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 30px;
    }
 
 }
@@ -324,7 +386,7 @@ h2{
   height: 400px;
   width: 200px;
   background: yellowgreen;
-  background: url('../images/replate_app_demo1.jpg') no-repeat center center;
+  background: url('../images/iphone_1.jpg') no-repeat center center;
   background-size: cover;
   border: 10px solid white;
 
@@ -337,8 +399,10 @@ h2{
   margin-left: 150px;
   margin-top: -350px;
   @media (max-width: 600px) {
-    width: 65%;
-    height: 85%;
+    width: 130px;
+    height: 250px;
+    margin-left: 70px;
+    margin-top: -230px;
    }
 
 }
@@ -349,23 +413,35 @@ h2{
   @media (max-width: 600px) {
     margin-left: -50px;
    }
+
+   @media (max-width: 800px) {
+     //height: 0;
+    margin-left: 40px;
+   }
 }
 .call {
   margin-right: 5%;
   width: 50%;
   height: 400px;
   @media (max-width: 600px) {
-    height: auto;
+    height: 100%;
   width: 90%;
   margin-left: 50px;
   margin-bottom: 10px;
   //background: yellow; 
   }
+
+  @media (max-width: 800px) {
+    //height: 0;
+  width: auto;
+  height: auto;
+  padding-bottom: 50px;
+  }
   h2{
     margin-top: 20%;
     @media (max-width: 600px) {
       width: 90%;
-      margin-top: 10%;
+      margin-top: -10%;
       
       }
     
