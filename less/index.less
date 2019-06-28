@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-@lambda-red: rgb(147,29,37);
-@lambda-light-red: lighten(@lambda-red,10%);
+@replate-green:#4cb050;
+@replate-light-green: lighten(@replate-green,10%);
+@replate-menu-btn: #C94E3E;
 @white: rgb(255,255,255);
 
 
@@ -24,6 +25,71 @@ header{
    height: 80px;
    z-index: 2;
  }
+
+
+ /// MENU DROPDOWN //
+
+ .mobilehide{
+  @media (max-width: 600px) {
+    // position: fixed;
+   display: none;
+  }
+ }
+ .header-container{
+   display: none;
+   @media (max-width: 600px) {
+    // position: fixed;
+   display: flex;
+  }
+ }
+
+ .dropdown {
+  z-index: 2;
+  position: fixed;
+  background: @replate-menu-btn;
+  left: 25px;
+  cursor: pointer;
+  .dropdown-button {
+    padding: 15px;
+    border: 3px solid @white;
+    color: @white;
+    font-size: 20px;
+    font-weight: bold;
+    &:hover {
+      background-color: @replate-light-green;
+    }
+  }
+  .dropdown-content {
+    width: 100%;
+    position: absolute;
+    background-color: @white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 10px;
+    border: 2.5px solid @replate-green;
+    width: 200px;
+  }
+  .dropdown-link {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: @replate-green;
+    &:hover {
+      color: @white;
+      background-color: @replate-green;
+    }
+  }
+  .dropdown-hidden {
+    display: none;
+  }
+}
+
+ 
+
+ // END DROPDOWN //
 
 nav {
 

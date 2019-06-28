@@ -7,19 +7,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Replate - Let's Eliminate restaurant food waste</title>
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <script src="./js/menu.js"></script>
+  <script src="./js/Dropdown.js"></script>
+  
 </head>
 
 <body>
   <header id="header1">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a class="mobilehide" href="index.html">Home</a>
+      <a class="mobilehide" href="about.html">About</a>
       <a href="index.html" class="logo">Replate</a>
-      <a href="index.html#service">Service</a>
-      <a href="index.html#contact">Contact Us</a>
+      <a class="mobilehide" href="index.html#service">Service</a>
+      <a class="mobilehide" href="index.html#contact">Contact Us</a>
     </nav>
   </header>
+
+  <div class="header-container">
+    <div class="dropdown">
+      <div class="dropdown-button">Menu</div>
+      <div class="dropdown-content dropdown-hidden">
+          <a class="dropdown-link" href="index.html">Home</a>
+        <a class="dropdown-link" href="about.html">About</a>
+        <a class="dropdown-link" href="index.html#service">Service</a>
+        <a class="dropdown-link" href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
 
 
   <div class="container">
@@ -29,9 +44,9 @@
           <div class="innertablet"></div></div>
            
             <div class="call-message">
-        <h1>Help fight Hunger</h1>
+        <h1 class="animated fadeInLeft">Help fight Hunger</h1>
        
-          <h2>By Eliminating restaurant food waste</h2> 
+          <h2 class="animated fadeInRight delay-1s">By Eliminating restaurant food waste</h2> 
 
         
           <button class="top-btn" onclick="location.href='https://distracted-kare-3a90a8.netlify.com/sign-up'">Get Started</button>
@@ -92,7 +107,7 @@
     <div id="contact" class="contact">
         <h2>Got Questions?</h2>
         <p>We are here to answer your questions</p>
-      <form action="">
+        <form id="myForm" action="/form-sent.html">
         <input type="text" placeholder="Tester">
       <input type="text" placeholder="Testerino"><br>
     
@@ -107,6 +122,7 @@
     </footer>
     
   </div>
+  <script src="./js/Dropdown.js"></script>
 </body>
 
 </html>
