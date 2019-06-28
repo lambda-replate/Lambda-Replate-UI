@@ -154,16 +154,17 @@ h1 {
   background: white;
   border-color: white;
   border-style: solid solid solid solid;
-  border-width: 10px 30px 10px 30px;
+  border-width: 30px 10px 30px 10px;
   border-radius: 10px;
   z-index: 1;
   -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
   box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .tabletillustration {
-    display: none;
+    height: 350px;
+    width: 550px;
   }
 }
 .innertablet {
@@ -171,8 +172,14 @@ h1 {
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(177, 177, 177, 0.247);
-  background: url("../images/tablet_3.jpg");
+  background: url("../images/tablet_3.jpg") no-repeat center center;
   background-size: cover;
+}
+@media (max-width: 800px) {
+  .innertablet {
+    background: url("../images/iphone_1.jpg") no-repeat center center;
+    background-size: cover;
+  }
 }
 .sash1 {
   background-image: linear-gradient(to right top, white 0%, white 50%, transparent 50%);
@@ -185,14 +192,11 @@ h1 {
 @media (max-width: 600px) {
   .sash1 {
     background-image: linear-gradient(to right top, white 0%, white 50%, transparent 0%);
-    top: 50px;
-    height: 25%;
+    top: 81px;
+    height: 20%;
   }
 }
 @media (max-width: 800px) {
-  .sash1 {
-    top: -9px;
-  }
 }
 .sash2 {
   background-image: linear-gradient(to left bottom, white 0%, white 50%, transparent 50%);
@@ -244,20 +248,21 @@ h1 {
 .stat-box-right {
   padding-top: 170px;
   padding-left: 20px;
-  width: 50%;
   background: #9ec585;
 }
 @media (max-width: 600px) {
   .stat-box-right {
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 100%;
+    width: auto;
     background-size: cover;
   }
 }
 @media (max-width: 800px) {
+}
+@media (min-width: 801px) {
   .stat-box-right {
-    width: 80%;
+    width: 50%;
   }
 }
 h2 {
@@ -344,8 +349,10 @@ h2 {
 }
 @media (max-width: 600px) {
   .app-design {
-    width: 65%;
-    height: 85%;
+    width: 130px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 30px;
   }
 }
 .app-design2 {
@@ -365,8 +372,10 @@ h2 {
 }
 @media (max-width: 600px) {
   .app-design2 {
-    width: 65%;
-    height: 85%;
+    width: 130px;
+    height: 250px;
+    margin-left: 70px;
+    margin-top: -230px;
   }
 }
 .appscollection {
@@ -381,7 +390,7 @@ h2 {
 }
 @media (max-width: 800px) {
   .appscollection {
-    margin-left: 0;
+    margin-left: 40px;
   }
 }
 .call {
@@ -391,7 +400,7 @@ h2 {
 }
 @media (max-width: 600px) {
   .call {
-    height: auto;
+    height: 100%;
     width: 90%;
     margin-left: 50px;
     margin-bottom: 10px;
@@ -410,7 +419,7 @@ h2 {
 @media (max-width: 600px) {
   .call h2 {
     width: 90%;
-    margin-top: 10%;
+    margin-top: -10%;
   }
 }
 .call .call-btn {

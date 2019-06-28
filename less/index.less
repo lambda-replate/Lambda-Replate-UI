@@ -168,14 +168,15 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
   //border: 20px 5px solid olivedrab;
   border-color: white;
   border-style: solid solid solid solid;
-  border-width: 10px 30px 10px 30px;
+  border-width: 30px 10px 30px 10px;
   border-radius: 10px;
   z-index: 1;
   -webkit-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
   box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.37);
-  @media (max-width: 600px) {
-    display: none;
+  @media (max-width: 800px) {
+    height: 350px;
+  width: 550px;
     
    }
 }
@@ -185,8 +186,14 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(177, 177, 177, 0.247);
-  background: url("../images/tablet_3.jpg");
+  background: url("../images/tablet_3.jpg")no-repeat center center;
   background-size: cover;
+  @media (max-width: 800px) {
+  //   height: 350px;
+  // width: 550px;
+  background: url("../images/iphone_1.jpg")no-repeat center center;
+  background-size: cover;
+   }
 }
 
 .sash1 {
@@ -198,11 +205,11 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
     bottom: 0px;
   @media (max-width: 600px) {
     background-image: linear-gradient(to right top, white 0%, white 50%, transparent 0%);
-    top: 50px;
-    height: 25%;
+    top: 81px;
+    height: 20%;
   }
   @media (max-width: 800px) {
-    top: -9px;
+    //top: -9px;
   }
 
 }
@@ -259,17 +266,22 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
 .stat-box-right{
     padding-top: 170px;
     padding-left: 20px;
-    width: 50%;
+    
     background: rgb(158, 197, 133);
     @media (max-width: 600px) {
       padding-top: 15px;
       padding-bottom: 15px;
-      width: 100%;
+      width: auto;
       background-size: cover;
      }
 
      @media (max-width: 800px) {
-      width: 80%;
+      //width: 100%;
+      
+    }
+
+    @media (min-width: 801px) {
+      width: 50%;
       
     }
 }
@@ -353,8 +365,10 @@ margin-right: 0px;
   transform: rotate(10deg);
   margin-left: 300px;
   @media (max-width: 600px) {
-    width: 65%;
-    height: 85%;
+    width: 130px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 30px;
    }
 
 }
@@ -375,8 +389,10 @@ margin-right: 0px;
   margin-left: 150px;
   margin-top: -350px;
   @media (max-width: 600px) {
-    width: 65%;
-    height: 85%;
+    width: 130px;
+    height: 250px;
+    margin-left: 70px;
+    margin-top: -230px;
    }
 
 }
@@ -390,7 +406,7 @@ margin-right: 0px;
 
    @media (max-width: 800px) {
      //height: 0;
-    margin-left: 0;
+    margin-left: 40px;
    }
 }
 .call {
@@ -398,7 +414,7 @@ margin-right: 0px;
   width: 50%;
   height: 400px;
   @media (max-width: 600px) {
-    height: auto;
+    height: 100%;
   width: 90%;
   margin-left: 50px;
   margin-bottom: 10px;
@@ -415,7 +431,7 @@ margin-right: 0px;
     margin-top: 20%;
     @media (max-width: 600px) {
       width: 90%;
-      margin-top: 10%;
+      margin-top: -10%;
       
       }
     
