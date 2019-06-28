@@ -25,6 +25,11 @@ header {
   height: 80px;
   z-index: 2;
 }
+header .right {
+  background: darkgray;
+  position: absolute;
+  right: 2%;
+}
 @media (max-width: 600px) {
   .mobilehide {
     display: none;
