@@ -95,6 +95,12 @@ header.scroll {
     display: block;
   }
 }
+@media (max-width: 800px) {
+  .titlearea h1 {
+    width: auto;
+    margin-left: 0px;
+  }
+}
 .box {
   width: 250px;
   height: 200px;
@@ -134,6 +140,11 @@ h1 {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (max-width: 800px) {
+  .top-btn {
+    margin-top: -4px;
+  }
 }
 .tabletillustration {
   margin-top: 5%;
@@ -178,6 +189,11 @@ h1 {
     height: 25%;
   }
 }
+@media (max-width: 800px) {
+  .sash1 {
+    top: -9px;
+  }
+}
 .sash2 {
   background-image: linear-gradient(to left bottom, white 0%, white 50%, transparent 50%);
   position: absolute;
@@ -185,6 +201,11 @@ h1 {
   height: 30%;
 }
 @media (max-width: 600px) {
+  .sash2 {
+    height: 20%;
+  }
+}
+@media (max-width: 800px) {
   .sash2 {
     height: 20%;
   }
@@ -200,6 +221,11 @@ h1 {
     display: block;
     width: auto;
     margin-bottom: -40px;
+  }
+}
+@media (max-width: 800px) {
+  .statsbox {
+    width: auto;
   }
 }
 .stat-box-left {
@@ -227,6 +253,11 @@ h1 {
     padding-bottom: 15px;
     width: 100%;
     background-size: cover;
+  }
+}
+@media (max-width: 800px) {
+  .stat-box-right {
+    width: 80%;
   }
 }
 h2 {
@@ -264,6 +295,13 @@ h2 {
     padding-right: 0px;
   }
 }
+@media (max-width: 800px) {
+  .services {
+    padding-left: 0;
+    padding-bottom: 0px;
+    margin-right: 0px;
+  }
+}
 .box1 {
   display: inline-block;
   height: 100px;
@@ -281,6 +319,12 @@ h2 {
 }
 @media (max-width: 600px) {
   .app-content {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .app-content {
+    top: -9px;
     display: block;
   }
 }
@@ -335,6 +379,11 @@ h2 {
     margin-left: -50px;
   }
 }
+@media (max-width: 800px) {
+  .appscollection {
+    margin-left: 0;
+  }
+}
 .call {
   margin-right: 5%;
   width: 50%;
@@ -346,6 +395,13 @@ h2 {
     width: 90%;
     margin-left: 50px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .call {
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
   }
 }
 .call h2 {
