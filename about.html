@@ -5,22 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
         <link href="./css/index.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/favicon.ico" />
         <script src = "./about.js" async></script> 
         <script src ="./counter.js" async></script>
         <script src ="./abtevents.js" async></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/Dropdown.js"></script>
       </head>
 
 <body>
   <header id="header1">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a class="mobilehide" href="index.html">Home</a>
+      <a class="mobilehide" href="about.html">About</a>
       <a href="index.html" class="logo">Replate</a>
-      <a href="about.html#M1">Services</a>
-      <a href="about.html#C1">Contact</a>
+      <a class="mobilehide" href="about.html#M1">Services</a>
+      <a class="mobilehide" href="about.html#C1">Contact</a>
+      <a class="mobilehide right" href="https://distracted-kare-3a90a8.netlify.com/login"> Log In</a>
+
     </nav>
   </header>
+
+  <div class="header-container">
+      <div class="dropdown">
+        <div class="dropdown-button">Menu</div>
+        <div class="dropdown-content dropdown-hidden">
+            <a class="dropdown-link" href="index.html">Home</a>
+          <a class="dropdown-link" href="about.html">About</a>
+          <a class="dropdown-link" href="index.html#service">Service</a>
+          <a class="dropdown-link" href="index.html#contact">Contact Us</a>
+          <a class="dropdown-link" href="https://distracted-kare-3a90a8.netlify.com/login"> Log In</a>
+        </div>
+      </div>
+    </div>
 
   <section class= "tabsheadline">
     <div>
