@@ -2,7 +2,7 @@
 
 See [DEMO](https://replateapp.netlify.com/index.html) Here
 
-#Date Log
+#Date Log **
 
 **6/24 - Mockup** [MOCKUP](https://xd.adobe.com/view/21442870-953b-429c-48a4-4f583201c4e9-5775/)
 
