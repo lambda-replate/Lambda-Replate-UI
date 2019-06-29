@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import './components.less';
 
 @replate-green:#4cb050;
 @replate-light-green: lighten(@replate-green,10%);
@@ -382,6 +383,16 @@ h2{
     width: auto;
    }
   
+}
+
+.feature-section{
+
+  margin: 0 auto; //possible mixin
+width: 70%;
+@media (max-width: 600px) {
+  height: 490px;
+ }
+
 }
 
 .services{
