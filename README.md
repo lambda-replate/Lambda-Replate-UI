@@ -1,12 +1,18 @@
-# Lambda-Replate-UI **
+## Lambda-Replate-UI **
 
-**6/24 - Mockup** https://xd.adobe.com/view/21442870-953b-429c-48a4-4f583201c4e9-5775/
+See [DEMO](https://replateapp.netlify.com/index.html) Here
+
+#Date Log **
+
+**6/24 - Mockup** [MOCKUP](https://xd.adobe.com/view/21442870-953b-429c-48a4-4f583201c4e9-5775/)
 
 **6/25 - Initial** Setup
 
-**6/25 - Initial** Setup
+**6/27 - Initial** About Me components set up
 
-**6/25 - Initial** Setup
+**6/28 - Final Deployment** Site and App have successfuly been deployed on Netlify. 
+
+
 <!-- 
 <!-- 
 COLORS --

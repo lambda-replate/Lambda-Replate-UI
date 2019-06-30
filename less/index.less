@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import './components.less';
 
 @replate-green:#4cb050;
 @replate-light-green: lighten(@replate-green,10%);
@@ -384,6 +385,16 @@ h2{
   
 }
 
+.feature-section{
+
+  margin: 0 auto; //possible mixin
+width: 70%;
+@media (max-width: 600px) {
+  height: 490px;
+ }
+
+}
+
 .services{
    padding: 5%;
 
@@ -435,7 +446,7 @@ margin-right: 0px;
   height: 400px;
   width: 200px;
   background: yellowgreen;
-  background: url('../images/replate_app_demo1.jpg') no-repeat center center;
+  background: url('../images/iphone_2.jpg') no-repeat center center;
   background-size: cover;
   border: 10px solid white;
 
