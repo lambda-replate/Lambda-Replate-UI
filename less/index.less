@@ -8,13 +8,16 @@
 @white: rgb(255,255,255);
 
 
-
+*{
+  transition:all .25s linear; 
+}
 html{
   
     background: #F4F4F4;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     //font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
     
   }
 
@@ -162,12 +165,7 @@ box-shadow: 0px 10px 39px 0px rgba(165,171,189,0.37);
 
 .parallax{
  height: 600px;
-//  background: #FF416C;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to top, rgba(255, 75, 43, 0.356), rgba(255, 65, 109, 0.185));  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to top, rgba(255, 75, 43, 0.356), rgba(255, 65, 109, 0.185)), /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
    background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(243, 243, 243, 0.863)),
-   
     url('../images/elaine-casap-qgHGDbbSNm8-unsplash.jpg')no-repeat center center fixed;
     background-size: cover;
     
@@ -221,6 +219,8 @@ h1 {
 
 
 .top-btn{
+  position: relative;
+z-index:1;
   padding: 10px;
   margin-top: 20px;
   height: 70px;
@@ -312,6 +312,26 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
 }
 
 
+.sash3{
+  background-image: linear-gradient(to left bottom, white 0%, white 50%, transparent 50%);
+  position: absolute;
+  width:  98.5%;
+  height: 10%;
+  z-index: -1;
+  @media (max-width: 600px) {
+    height: 20%;
+  }
+  @media (max-width: 800px) {
+    height: 20%;
+  }
+  //top: 103%; 
+}
+
+
+.stats{
+  background: white;
+}
+
 .statsbox{
     margin: 0 auto; //possible mixin
   width: 65%;
@@ -326,9 +346,7 @@ background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ 
    @media (max-width: 800px) {
       width: auto;
       
-    }
-
-   
+    } 
   
 }
 
@@ -373,9 +391,14 @@ h2{
     font-size: 2.5em;
 }
 
+.missioncontainer{
+  background: white;
+}
+
 .mission{
     padding:  25px;
     margin: 0 auto; //possible mixin
+
   width: 70%;
   @media (max-width: 600px) {
     padding-top:  0px;
